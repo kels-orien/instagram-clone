@@ -63,6 +63,7 @@ a {
     width: 215px;
     height:40px;
     margin-top: 1.2rem;
+    text-align: center;
   }
   .search .fa-search { 
     position: absolute;
@@ -78,7 +79,6 @@ a {
     color: #262626;
     font-size: 14px;
     outline: 0;
-    text-align: center;
     z-index: 2;
 }
 
@@ -140,6 +140,7 @@ a {
 {
     .row [class^="col-"]:not(:last-child) {
         margin-right: 1rem;
+        float: left;
     }
 }
       
