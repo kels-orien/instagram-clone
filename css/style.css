@@ -92,7 +92,9 @@ a {
     color: #000;
     
 }
-
+.logo__font {
+    position: relative;
+}
 .explore{
 
 }
