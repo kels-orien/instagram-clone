@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 62.5%; }
+    font-size: 100%; }
 
 body {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
+    font-weight: 200;
+    line-height: 1.5;
     color: #000;
     background-color: #fafafa;
 }
@@ -18,8 +18,6 @@ body {
 @font-face {
     font-family: Billabong;
     src: url('./css/fonts/Billabong.ttf');
-    font-weight: bold;
-    font-size: 3rem;
     letter-spacing: .1rem;
 }
 
@@ -29,85 +27,35 @@ a {
 
 .top-bar {
     background-color: #fff;
-    box-shadow: 0 0 0rem rgba(#1f1d1d 0.1);
-    padding: 1rem 0 1rem 3rem;
+    box-shadow: 0 0 0 0 rgba(#1f1d1d 0.1);
+    padding: 0rem 3rem .0rem 3rem;
     width: 100%;
+    height: 100%;
 }
     
 .top-bar__icon {
-    width: 3rem;
-    height: 2.35rem;
-    font-size: 3rem;
+    width: 1.8rem;
     font-family: inherit;
-    font-weight: 200;
-    color: #000;
-    
+    margin-top: 1.0rem;
 }
 
 
-.top-bar__right {
-    float:right;
-    padding-right:3rem;
-    padding-top: 1rem;
-}
-
-.bar-space {
-    padding-left: 2rem;
-}
-
-
-.search {
-    position: relative;
-    font-size: 1.5rem;
-    min-width: 125px;
-    width: 215px;
-    height:40px;
-    margin-top: 1.2rem;
-    text-align: center;
-  }
-  .search .fa-search { 
-    position: absolute;
-    top: 6px;
-    left:5rem;
-    color:#8a7d7d;
-  }
-  .search input { text-indent: 40px;}
-
-  .searchbox {
-    border: solid 1px #dbdbdb;
-    border-radius: 3px;
-    color: #262626;
-    font-size: 14px;
-    outline: 0;
-    z-index: 2;
-}
-
-.logo {
+.logo_font {
     font-family:billabong;
-    padding:2rem;
     width: 3rem;
-    height: 2.35rem;
-    font-size: 3rem;
+    height: 2rem;
+    font-size: 2.2rem;
     font-weight: 200;
-    color: #000;
-    
-}
-.logo__font {
-    position: relative;
-}
-.explore{
-
-}
-
-.like {
-
-
+    color: #000;  
 }
 
 
+.top_center {
+    text-align: center;
+}
 
-.profile {
-
+.top_right {
+    float: right;
 }
 
 
@@ -138,11 +86,15 @@ a {
       width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 
-@media only screen and (max-width: 768px)
-{
-    .row [class^="col-"]:not(:last-child) {
-        margin-right: 1rem;
-        float: left;
+      @media only screen and (max-width: 425px) {
+        .row [class^="col-"]:first-child {
+            margin-right: 2rem; }
+            .row [class^="col-"]:last-child {
+                float: right; }
     }
-}
-      
+
+    @media only screen and (max-width: 320px) {
+        row [class^="col-"]:first-child {
+            margin-right: 2rem; }
+        }
+    
