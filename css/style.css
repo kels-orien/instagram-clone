@@ -1,7 +1,9 @@
-* { 
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
 }
 html {
     font-size: 100%; }
@@ -13,6 +15,14 @@ body {
     line-height: 1.5;
     color: #000;
     background-color: #fafafa;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 @font-face {
@@ -27,7 +37,7 @@ a {
 
 .top-bar {
     background-color: #fff;
-    box-shadow: 0 0 0 0 rgba(#1f1d1d 0.1);
+    border-bottom: 1px solid rgba(0,0,0,.0975);
     padding: 0rem 3rem .0rem 3rem;
     width: 100%;
     height: 100%;
@@ -97,4 +107,67 @@ a {
         row [class^="col-"]:first-child {
             margin-right: 2rem; }
         }
+
+
+
+.section-post {
+    margin-top: 4rem;
+    background-color: inherit;
+}
     
+
+.user-pix {
+    position: absolute;
+    width:3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translate(-5px, -5px);
+    vertical-align: baseline;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+}
+
+.canvas-pix {
+    transform: translate(-5px, -5px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 4px;
+}
+._6q-tv {
+    height: 100%;
+    width: 100%;
+}
+
+._2dbep {
+    background-color: #fafafa;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+._2dbep {
+    border: 1px solid rgba(0,0,0,.0975);
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
