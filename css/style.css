@@ -130,6 +130,7 @@ a {
     height: 2.5rem;
     transform: scale(1.0) translateY(0.25rem) translateX(0.25rem);
     border-radius: 50%;
+    float: left;
 }
 
 .post-username {
@@ -139,16 +140,29 @@ a {
     background-color: #fff;
     border: 1px solid #e6e6e6;
     border-radius: 3px;
-    width:12rem;
-    height:12rem;
+    width:37rem;
+    height: 100%;
     margin: 0 auto;
+    box-sizing: inherit;
 }
 
 
 .post-pix {
-    width:12rem;
-    height:12rem;
+    width:36.9rem;
+    height:36.9rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 
+
+.icon-left {
+    float: left;
+    margin-left:1.5rem;
+} 
+
+.icon-right {
+    float: right;
+    margin-right:1.5rem;
+}
 
