@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; 
+  box-sizing: border-box; 
 }
 html {
     font-size: 100%; }
@@ -31,7 +31,6 @@ img {
     padding: 0;
     border: 0;
     font: inherit;
-    vertical-align: baseline;
 }
 
 @font-face {
@@ -46,19 +45,48 @@ a {
 
 .top-bar {
     background-color: #fff;
-    border-bottom: 1px solid rgba(0,0,0,.0975);
-    padding: 0rem 3rem .0rem 3rem;
+    box-shadow: 0 0 0rem rgba(#1f1d1d 0.1);
+    padding: 1rem 0 1rem 3rem;
     width: 100%;
-    height: 100%;
 }
     
 .top-bar__icon {
-    width: 1.8rem;
+    width: 3rem;
+    height: 1.5rem;;
+    font-size: 3rem;
     font-family: inherit;
-    margin-top: 1.0rem;
+    font-weight: 200;
+    color: #000;
+    
 }
 
 
+.top-bar__right {
+    float:right;
+    padding-right:3rem;
+    padding-top: 2rem;
+}
+
+.bar-space {
+    padding-left: 1rem;
+} 
+
+.top-bar {
+    background-color: #fff;
+    box-shadow: 0 0 0rem rgba(#1f1d1d 0.1);
+    padding: 1rem 0 1rem 3rem;
+    width: 100%;
+}
+
+.top-bar__right {
+    float:right;
+    padding-right:3rem;
+    padding-top: 2rem;
+}
+
+.logo__font {
+    float: left;
+}
 .logo_font {
     font-family:billabong;
     width: 3rem;
@@ -67,8 +95,50 @@ a {
     font-weight: 200;
     color: #000;  
 }
+.search input {
+     text-indent: 3rem;
+}
+.search {
+    min-width: 12.5rem;
+    width: 21.5rem;
+    margin-top: 1.6rem;
+  }
+  .search .fa-search { 
 
+    position: absolute;
+    color:#8a7d7d;
+  }
+ 
 
+  .span-search  {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    white-space: nowrap;
+  }
+  .searchbox {
+    border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    color: #262626;
+    outline: 0;
+    padding: 3px 10px 3px 26px;
+    z-index: 2;
+}
+.logo {
+    float: left;
+    font-family:billabong;
+    padding:1rem;
+    width: 3rem;
+    height: 2.35rem;
+    font-size: 2.0rem;
+    font-weight: 200;
+    color: #000;
+    
+}
+.logo__font {
+    float: left;
+}
 .top_center {
     text-align: center;
 }
@@ -121,9 +191,17 @@ a {
 
 .section-post {
     margin-top: 4rem;
-    background-color: inherit;
 }
-    
+
+.section-post .post {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    max-width:37rem;
+    min-height: 29rem;
+    margin: 0 auto;
+    box-sizing: inherit;
+}
 
 .user-pix {
     width:2.5rem;
@@ -136,20 +214,11 @@ a {
 .post-username {
     float: left;
 }
-.post {
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    width:37rem;
-    height: 100%;
-    margin: 0 auto;
-    box-sizing: inherit;
-}
 
 
 .post-pix {
     width:36.9rem;
-    height:36.9rem;
+    max-height:36.9rem;
     overflow: hidden;
     margin-bottom: 1rem;
 }
@@ -158,7 +227,8 @@ a {
 
 .icon-left {
     float: left;
-    margin-left:1.5rem;
+    padding-left:1.5rem;
+
 } 
 
 .icon-right {
@@ -166,3 +236,45 @@ a {
     margin-right:1.5rem;
 }
 
+
+.bar-space {
+    margin-left: 1rem;
+}
+
+.bottom__icon {
+    width: 1.8rem;
+    font-family: inherit;
+    float: left;
+    margin-left: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+    .logo__font {
+        display: none;
+    }
+}
+    @media only screen and (max-width: 320px) {
+        .logo__font {
+            display: none;
+        }  
+
+        .row [class^="col-"]:not(:last-child) {
+            margin-right: 0rem; } 
+    }
+      
+
+    @media only screen and (max-width: 661px) {
+        .top-bar__right {
+            display: none;
+        }
+    }
