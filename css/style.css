@@ -88,15 +88,19 @@ a {
     float: left;
 }
 .logo_font {
-    font-family:billabong;
-    width: 3rem;
+    font-family:billabong;   
     height: 2rem;
     font-size: 2.2rem;
     font-weight: 200;
     color: #000;  
 }
 .search input {
-     text-indent: 3rem;
+     text-indent: 2.6rem;
+     color:#8a7d7d;
+     font: inherit;
+     font-size: .8rem;
+     width: 13rem;
+     background-color: #fafafa;
 }
 .search {
     min-width: 12.5rem;
@@ -104,11 +108,23 @@ a {
     margin-top: 1.6rem;
   }
   .search .fa-search { 
-
+    text-indent: 3rem;
+    margin-top:.5rem;
     position: absolute;
     color:#8a7d7d;
+    font-size: .8rem;
   }
  
+
+  .search .fa-search span:focus{ 
+    position: absolute;
+  }
+ 
+
+  .search input[type=text]:focus {
+    text-indent: 0rem;
+    background-color: #ffffff;
+}
 
   .span-search  {
     max-width: 140px;
