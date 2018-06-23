@@ -64,9 +64,8 @@ a {
 .top-bar__right {
     float:right;
     padding-right:3rem;
-    padding-top: 2rem;
+    padding-top: 1.3rem;
 }
-
 .bar-space {
     padding-left: 1rem;
 } 
@@ -78,15 +77,6 @@ a {
     width: 100%;
 }
 
-.top-bar__right {
-    float:right;
-    padding-right:3rem;
-    padding-top: 2rem;
-}
-
-.logo__font {
-    float: left;
-}
 .logo_font {
     font-family:billabong;   
     height: 2rem;
@@ -105,7 +95,7 @@ a {
 .search {
     min-width: 12.5rem;
     width: 21.5rem;
-    margin-top: 1.6rem;
+    margin-top: 1.3rem;
   }
   .search .fa-search { 
     text-indent: 3rem;
@@ -155,20 +145,23 @@ a {
 .logo__font {
     float: left;
 }
-.top_center {
-    text-align: center;
-}
 
 .top_right {
     float: right;
 }
 
+.top-center {
+    margin: 0 auto;
+}
 
+.top-left {
+    float: left;
+}
 .row {
     max-width: 114rem;
     margin: 0 auto; }
     .row:not(:last-child) {
-      margin-bottom: 8rem; }
+      margin-bottom: 4rem; }
     .row::after {
       content: "";
       display: table;
@@ -189,20 +182,6 @@ a {
       width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
     .row .col-3-of-4 {
       width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
-
-
-      @media only screen and (max-width: 425px) {
-        .row [class^="col-"]:first-child {
-            margin-right: 2rem; }
-            .row [class^="col-"]:last-child {
-                float: right; }
-    }
-
-    @media only screen and (max-width: 320px) {
-        row [class^="col-"]:first-child {
-            margin-right: 2rem; }
-        }
-
 
 
 .section-post {
@@ -275,8 +254,11 @@ a {
 }
 
 @media only screen and (max-width: 425px) {
-    .logo__font {
+    .search {
         display: none;
+    }
+    .top-bar__right {
+        display: inline;
     }
 }
     @media only screen and (max-width: 320px) {
@@ -292,5 +274,18 @@ a {
     @media only screen and (max-width: 661px) {
         .top-bar__right {
             display: none;
+        }
+    }
+
+
+    
+   
+
+  
+
+
+    @media only screen and (max-width: 768px) {
+    .row [class^="col-"]:not(:last-child) {
+        margin-right: 4rem;
         }
     }
