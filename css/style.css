@@ -254,9 +254,7 @@ a {
 }
 
 @media only screen and (max-width: 425px) {
-    .search {
-        display: none;
-    }
+   
     .top-bar__right {
         display: inline;
     }
@@ -271,21 +269,14 @@ a {
     }
       
 
-    @media only screen and (max-width: 661px) {
-        .top-bar__right {
+    @media only screen and (max-width: 559px) {
+        .search {
             display: none;
         }
     }
 
-
-    
-   
-
-  
-
-
     @media only screen and (max-width: 768px) {
     .row [class^="col-"]:not(:last-child) {
-        margin-right: 4rem;
+        margin-right: 0rem;
         }
     }
