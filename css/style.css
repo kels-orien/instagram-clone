@@ -280,3 +280,11 @@ a {
         margin-right: 0rem;
         }
     }
+
+
+    @media not all, (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)
+    {
+        .coreSpriteSaveOpen {
+            background-position: -301px -399px;
+        }
+    }
